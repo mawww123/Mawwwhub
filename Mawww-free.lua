@@ -1,4 +1,4 @@
--- obfuscator by mawww
+-- obfuscator by mawww .
 -- Mode: Delta Executor Maximum Shield
 -- Generated: 2026-10-11T11:49:09.961Z
 local function _d(_s,_k) local _t={} for _i=0,255 do local _a=_i local _b=_k local _r=0 local _p=1 for _=1,8 do if _a%2~=_b%2 then _r=_r+_p end _a=(_a-_a%2)/2 _b=(_b-_b%2)/2 _p=_p*2 end _t[string.char(_i)]=string.char(_r) end return (_s:gsub(".",_t)) end
